@@ -1,5 +1,27 @@
 $(document).ready(function () {
+
     $('.SlectBox').SumoSelect();
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+       
+        margin: 30,
+        responsive: {
+            0: {
+                items: 1
+            },
+            760: {
+                items: 2
+            },
+            1198: {
+                items: 3
+            }
+        }
+    });
+
+
+    new WOW().init();
+    
+
 
     let left = -70;
     let right = -70;
@@ -10,8 +32,7 @@ $(document).ready(function () {
         if ($(this).scrollTop() + 300 >= $(".search-area").offset().top && circle1Left < 16) {
             $(".search-form .shape1").css("left", left++);
             $(".search-form .shape2").css("right", right++);
-        } 
-        else if ($(this).scrollTop() + 600 > $(".search-area").offset().top && circle1Left > -70) {
+        } else if ($(this).scrollTop() + 600 > $(".search-area").offset().top && circle1Left > -70) {
             $(".search-form .shape1").css("left", left--);
             $(".search-form .shape2").css("right", right--);
         } else {

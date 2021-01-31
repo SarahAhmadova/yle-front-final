@@ -96,26 +96,33 @@ body {
 
             &::before,
             &::after {
+                content: "";
+                position: absolute;
                 width: 8px;
                 bottom: 7px;
                 height: 2px;
-                content: "";
-                position: absolute;
                 background-color: #0000fe;
             }
-           &:before {
+
+            &:before {
                 left: 0;
             }
-            &::after{
-                    right: 0;
+
+            &::after {
+                right: 0;
             }
         }
-        h2{
-            color: #000;
+
+        h2 {
             font-size: 40px;
             font-weight: 700;
             line-height: 1.125;
             padding: 15px 0px 20px;
         }
+    }
+
+    h3{
+        margin: 0;
+        font-family: "Fira Sans";
     }
 }

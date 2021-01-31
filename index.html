@@ -4,20 +4,25 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Bootstrap -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-      crossorigin="anonymous" />
+
+   <!-- Fontawesome -->
    <script src="https://kit.fontawesome.com/4643ad54ed.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="/assets/plugins/TextRotator/morphext.css">
+
+   <!-- SumoSelect -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/sumoselect.min.css">
+
+   <!-- Main style -->
    <link rel="stylesheet" href="/assets/css/style.min.css">
    <title>Document</title>
 </head>
 
 <body>
    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg  ">
          <div class="container">
             <a class="navbar-brand" href="#"><img src="/assets/img/logo3.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -80,53 +85,118 @@
          </div>
       </nav>
    </header>
-   <section id="banner">
-      <span class="dot1"></span>
-      <span class="dot2"></span>
-      <span class="dot3"></span>
-      <span class="dot4"></span>
-      <div class="container">
-         <div class="banner-content">
-            <div class="tag">
-               <span class="inner-tag">Primary</span>
-               <p>We emphasize on health &amp; sanitise issues</p>
+   <main>
+      <section id="banner">
+         <span class="dot1"></span>
+         <span class="dot2"></span>
+         <span class="dot3"></span>
+         <span class="dot4"></span>
+         <div class="content">
+            <div class="container">
+               <div class="banner-content">
+                  <div class="tag">
+                     <span class="inner-tag">Primary</span>
+                     <p>We emphasize on health &amp; sanitise issues</p>
+                  </div>
+                  <div class="text-rotator">
+                     <h1>Gathering the brightest
+                        minds for a <span class="texts">
+                           <span class="word">better-world.</span>
+                           <span class="word">Helping-Hand.</span>
+                           <span class="word">Make-idea.</span>
+                        </span></h1>
+   
+                  </div>
+                  <p class="text-p">Collaborate Consulting exists to find the place where to
+                     being seemingly disparate interests meet. This undergraduate course teaches students what it was like.
+                  </p>
+                  <div class="btns">
+                     <a href="#" class="covered-btn">All Courses</a>
+                     <a href="#" class="play-btn"><i class="fas fa-play"></i>
+                        <span class="circle circle1"></span>
+                        <span class="circle circle2"></span>
+                        <span class="circle circle3"></span>
+                     </a>
+                  </div>
+               </div>
+               <div class="mark">
+                  Yle
+               </div>
             </div>
-            <h1 class="cd-headline letters scale">Gathering the brightest
-               minds for a
-               <span id="js-rotating">
-                  <b>
-                     <i>b</i><i>e</i><i>t</i><i>t</i><i>e</i><i>r</i><i>-</i><i>w</i><i>o</i><i>r</i><i>l</i><i>d</i><i>.</i></b> ,
-                  <b>
-                     <i>H</i><i>e</i><i>l</i><i>p</i><i>i</i><i>n</i><i>g</i><i>-</i><i>H</i><i>a</i><i>n</i><i>d</i><i>.</i></b>,
-                  <b>
-                     <i>M</i><i>a</i><i>k</i><i>e</i><i>-</i><i>I</i><i>d</i><i>e</i><i>a</i><i>.</i></b>
-               </span>
-            </h1>
-            <p class="text-p">Collaborate Consulting exists to find the place where to
-               being seemingly disparate interests meet. This undergraduate course teaches students what it was like.
-            </p>
-            <div class="btns">
-               <a href="#" class="orange-btn">All Courses</a>
-               <a href="#" class="play-btn"><i class="fas fa-play"></i>
-               <span class="circle circle1"></span>
-               <span class="circle circle2"></span>
-               <span class="circle circle3"></span>
-               </a>
+            <div class="banner-img">
+               <img src="/assets/img/banner.png" alt="">
+            </div>
+         </div>
+   
+   
+      </section>
+      <div class="search-area">
+         <div class="container">
+            <div class="search-form">
+               <span class="shape1"><img src="assets/img/cr-shape1.png" alt=""></span>
+               <span class="shape2"><img src="assets/img/cr-shape2.png" alt=""></span>
+               <form>
+                  <div class="form-div">
+                     <div class="select-area">
+                        <select class="SlectBox">
+                           <option data-display="Course Type">Course Type </option>
+                           <option value="1">Weekly</option>
+                           <option value="2">Monthly</option>
+                           <option value="4">Yearly</option>
+                        </select>
+                        <select class="SlectBox">
+                           <option data-display="Language ">Language </option>
+                           <option value="1">English</option>
+                           <option value="2">German</option>
+                           <option value="4">Spanish</option>
+                        </select>
+                        <select class="SlectBox">
+                           <option data-display="Skill">Skill</option>
+                           <option value="1">Developer</option>
+                           <option value="2">Designer</option>
+                           <option value="4">Marketer</option>
+                        </select>
+                     </div>
+                     <button type="submit" class="covered-btn"><i class="fas fa-search"></i> Search</button>
+                  </div>
+               </form>
+            </div>
+            <div class="apply">
+               <p>Are you qualified to teach our Students? <a href="#">Apply Now</a></p>
             </div>
          </div>
       </div>
-      <div class="banner-img">
-         <img src="/assets/img/banner.png" alt="">
-      </div>
-      <div class="mark">
-         Yle
-      </div>
-   </section>
-   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <section id="categories">
+         <div class="section-title">
+            <p class="watermark">Categories</p>
+            <span>Top Categories</span>
+            <h2>We have many courses in our
+               top Categories
+            </h2>
+         </div>
+      </section>
+   </main>
+   <footer>
+
+   </footer>
+
+
+   <!-- ------ Jquery -------- -->
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+   <!-- ------ SumoSelect -------- -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/jquery.sumoselect.min.js"></script>
+
+   <!-- ------ Bootstrap -------- -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"></script>
-   <script src="/assets/plugins/TextRotator/morphext.js"></script>
+
+   <!-- ------ ScrollMe -------- -->
+   <script src="/assets/plugins/ScrollMe/jquery.scrollme.min.js"></script>
+
+   <!-- ------ Main js -------- -->
    <script src="/assets/js/script.js"></script>
 </body>
 

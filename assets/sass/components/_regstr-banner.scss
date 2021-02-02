@@ -1,0 +1,77 @@
+#regstr-banner {
+    padding-top: 60px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 210px;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: #f7f7f7;
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+        padding: 45px;
+        background-color: #fff;
+        box-shadow: -3.285px 20.741px 51px 0px rgba(0, 0, 47, 0.05);
+        display: flex;
+
+        &::before {
+            content: url(/assets/img/r-bg.png);
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .text {
+            max-width: 450px;
+
+            h3 {
+                color: #fff;
+                font-size: 36px;
+                font-weight: 700;
+                padding-bottom: 20px;
+
+                span {
+                    color: #ff5520;
+                }
+            }
+
+            p {
+                color: #c6c6c6;
+                padding-bottom: 25px;
+                margin: 0;
+            }
+
+            .covered-btn {
+                height: 45px;
+                line-height: 45px;
+                width: 140px;
+                color: #fff;
+                display: block;
+                background-color: #00a4ff !important;
+
+                &::after {
+                    background-color: #ff5520;
+                }
+            }
+        }
+
+        .right-img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}

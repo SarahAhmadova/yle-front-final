@@ -1,7 +1,9 @@
 $(document).ready(function () {
 
+    new WOW().init();
+
     $('.SlectBox').SumoSelect();
-    $('.owl-carousel').owlCarousel({
+    $('#category-carousel').owlCarousel({
         loop: true,
        
         margin: 30,
@@ -17,12 +19,38 @@ $(document).ready(function () {
             }
         }
     });
+    $('#news-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        responsive: {
+            0: {
+                items: 1
+            },
+            760: {
+                items: 2
+            },
+            1198: {
+                items: 3
+            }
+        }
+    });
+    $('#clients-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        responsive: {
+            0: {
+                items: 1
+            },
+            760: {
+                items: 2
+            },
+            1198: {
+                items: 4
+            }
+        }
+    });
 
-
-    new WOW().init();
     
-
-
     let left = -70;
     let right = -70;
 

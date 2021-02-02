@@ -75,37 +75,6 @@
             }
         }
 
-        .owl-dots {
-            margin-top: 15px;
-            text-align: center;
-
-            button {
-                outline: none;
-            }
-
-            .owl-dot {
-                background: #fff;
-
-                span {
-                    display: inline-block;
-                    width: 28px;
-                    height: 5px;
-                    margin: 0px 5px;
-                    border-radius: 30%;
-                    display: inline-block;
-                    background-color: #ececed;
-                    transition: all .3s;
-                }
-
-                &:focus {}
-
-                &.active {
-                    span {
-                        width: 38px;
-                        background-color: #0000fe;
-                    }
-                }
-            }
-        }
+       
     }
 }

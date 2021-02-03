@@ -75,3 +75,12 @@
     }
 
 }
+
+#about-page{
+    #regstr-banner{
+        padding-top: 0;
+        &::before{
+            background-color: transparent;
+        }
+    }
+}

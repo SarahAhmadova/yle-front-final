@@ -126,3 +126,13 @@
 
     }
 }
+
+#about-page{
+    #testimonial {
+        .owl-item:hover{
+            .client-box{
+                transform: translateY(-25px);
+            }
+        }
+    }
+}

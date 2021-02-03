@@ -1,84 +1,103 @@
 $(document).ready(function () {
 
-    new WOW().init();
+    if ($(".wow").length) {
+        new WOW().init();
+    }
 
-    $('.SlectBox').SumoSelect();
-    $('#category-carousel').owlCarousel({
-        loop: true,
-       
-        margin: 30,
-        responsive: {
-            0: {
-                items: 1
-            },
-            760: {
-                items: 2
-            },
-            1198: {
-                items: 3
+    if ($('.SlectBox').length) {
+        $('.SlectBox').SumoSelect();
+    }
+
+    if ($('#category-carousel').length) {
+        $('#category-carousel').owlCarousel({
+            loop: true,
+
+            margin: 30,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                760: {
+                    items: 2
+                },
+                1198: {
+                    items: 3
+                }
             }
-        }
-    });
-    $('#news-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        responsive: {
-            0: {
-                items: 1
-            },
-            760: {
-                items: 2
-            },
-            1198: {
-                items: 3
+        });
+    }
+
+    if ($('#news-carousel').length) {
+        $('#news-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                760: {
+                    items: 2
+                },
+                1198: {
+                    items: 3
+                }
             }
-        }
-    });
-    $('#clients-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        responsive: {
-            0: {
-                items: 1
-            },
-            760: {
-                items: 2
-            },
-            1198: {
-                items: 4
+        });
+    }
+
+    if ($('#clients-carousel').length) {
+        $('#clients-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                760: {
+                    items: 2
+                },
+                1198: {
+                    items: 4
+                }
+            }
+        });
+    }
+
+
+    let left = -70;
+    let right = -70;
+
+    $(window).scroll(function () {
+        if ($(".search-area .shape1").length) {
+            let circle1Left = $(".search-area .shape1").position().left;
+
+            if ($(this).scrollTop() + 300 >= $(".search-area").offset().top && circle1Left < 16) {
+                $(".search-form .shape1").css("left", left++);
+                $(".search-form .shape2").css("right", right++);
+            } else if ($(this).scrollTop() + 600 > $(".search-area").offset().top && circle1Left > -70) {
+                $(".search-form .shape1").css("left", left--);
+                $(".search-form .shape2").css("right", right--);
+            } else {
+                $(".search-form .shape1").css("left", -70);
+                $(".search-form .shape2").css("right", -70);
             }
         }
     });
 
     
-    let left = -70;
-    let right = -70;
-
-    $(window).scroll(function () {
-        let circle1Left = $(".search-area .shape1").position().left;
-
-        if ($(this).scrollTop() + 300 >= $(".search-area").offset().top && circle1Left < 16) {
-            $(".search-form .shape1").css("left", left++);
-            $(".search-form .shape2").css("right", right++);
-        } else if ($(this).scrollTop() + 600 > $(".search-area").offset().top && circle1Left > -70) {
-            $(".search-form .shape1").css("left", left--);
-            $(".search-form .shape2").css("right", right--);
-        } else {
-            $(".search-form .shape1").css("left", -70);
-            $(".search-form .shape2").css("right", -70);
-
-        }
-
-    });
-
     var words = document.querySelectorAll('.text-rotator .word');
     var wordArray = [];
     var currentWord = 0;
+    if (words.length) {
+        words[currentWord].style.opacity = 1;
+        for (var i = 0; i < words.length; i++) {
+            splitLetters(words[i]);
+        }
 
-    words[currentWord].style.opacity = 1;
-    for (var i = 0; i < words.length; i++) {
-        splitLetters(words[i]);
+        changeWord();
+        setInterval(changeWord, 4000);
     }
+
 
     function changeWord() {
         var cw = wordArray[currentWord];
@@ -123,6 +142,4 @@ $(document).ready(function () {
         wordArray.push(letters);
     }
 
-    changeWord();
-    setInterval(changeWord, 4000);
 });

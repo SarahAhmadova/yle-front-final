@@ -1,7 +1,8 @@
 body {
-    background-color: #f2f2f4;
 
     .map {
+        background-color: #f2f2f4;
+
         padding: 100px 0px 0px;
         iframe {
             outline: none;
@@ -10,6 +11,8 @@ body {
 
     #contact-info {
         padding: 100px 0px;
+        background-color: #f2f2f4;
+
         .info-box {
             text-align: center;
             padding: 50px;
@@ -37,6 +40,8 @@ body {
     }
 
     #contact-form{
+        background-color: #f2f2f4;
+        padding: 0px 0px 100px;
         form {
             padding: 35px;
             margin-top: 40px;

@@ -36,40 +36,43 @@ body {
         }
     }
 
-    form {
-        padding: 35px;
-        margin-top: 40px;
-        background-color: #fff;
-
-        input {
-            height: 50px;
-            width: 340px;
-            border: none;
-            margin: 0px 15px;
-            padding-left: 20px;
-            border-radius: 8px;
-            background-color: #efeff0;
-        }
-
-        textarea {
-            width: 100%;
-            border: none;
-            height: 170px;
-            padding: 20px;
-            margin-top: 30px;
-            border-radius: 8px;
-            background-color: #efeff0;
-        }
-
-        button {
-            color: #fff;
-            width: 100%;
-            border: none;
-            height: 50px;
-            margin-top: 20px;
-            border-radius: 8px;
-            font-weight: 700;
-            background-color: #0000fe;
+    #contact-form{
+        form {
+            padding: 35px;
+            margin-top: 40px;
+            background-color: #fff;
+    
+            input {
+                height: 50px;
+                width: 340px;
+                border: none;
+                margin: 0px 15px;
+                padding-left: 20px;
+                border-radius: 8px;
+                background-color: #efeff0;
+            }
+    
+            textarea {
+                width: 100%;
+                border: none;
+                height: 170px;
+                padding: 20px;
+                margin-top: 30px;
+                border-radius: 8px;
+                background-color: #efeff0;
+            }
+    
+            button {
+                color: #fff;
+                width: 100%;
+                border: none;
+                height: 50px;
+                margin-top: 20px;
+                border-radius: 8px;
+                font-weight: 700;
+                background-color: #0000fe;
+            }
         }
     }
+    
 }

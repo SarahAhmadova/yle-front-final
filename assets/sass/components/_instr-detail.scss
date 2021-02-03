@@ -11,6 +11,7 @@
         box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.04);
 
         .img-box {
+            display: block;
             width: 370px;
             height: 370px;
             margin: 0 auto;
@@ -125,13 +126,17 @@
         }
     }
 
-    .ins-courses{
-        h2{
-        color: #000;
-        font-size: 24px;
-        font-weight: 700;
-        padding-bottom: 30px;
+    .ins-courses {
+        h2 {
+            color: #000;
+            font-size: 24px;
+            font-weight: 700;
+            padding-bottom: 30px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
     }
-    }
-    
+
 }

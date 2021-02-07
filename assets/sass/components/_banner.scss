@@ -2,22 +2,81 @@
     overflow: hidden;
     position: relative;
     padding-bottom: 132px;
-    .content{
+
+    .animatedSquares {
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 1;
+
+        &>span {
+            display: inline-block;
+            position: absolute;
+        }
+
+        .dot1 {
+            width: 7px;
+            height: 7px;
+            top: 200px;
+            left: 150px;
+            background-color: #00a4ff;
+            box-shadow: 0px 6px 13px 0px rgba(0, 0, 254, .25);
+            animation: dot1 12s infinite alternate
+        }
+
+        .dot2 {
+            top: 150px;
+            left: 25%;
+            width: 10px;
+            height: 10px;
+            background-color: #000;
+            box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, .25);
+            animation: dot2 18s infinite alternate;
+        }
+
+        .dot3 {
+            bottom: 150px;
+            left: 150px;
+            width: 10px;
+            height: 10px;
+            background-color: #ff5520;
+            box-shadow: 0px 6px 13px 0px rgba(255, 85, 32, .25);
+            animation: dot1 12s infinite alternate;
+        }
+
+        .dot4 {
+            width: 10px;
+            height: 10px;
+            right: 50%;
+            bottom: 200px;
+            background-color: #0000fe;
+            box-shadow: 0px 6px 13px 0px rgba(0, 0, 254, .25);
+            animation: dot2 18s infinite alternate;
+        }
+    }
+
+    .content {
         background-color: #f7f7f7;
+
         .container {
             position: relative;
+            display: flex;
+            z-index: 2;
+
             .banner-content {
                 max-width: 700px;
                 overflow: hidden;
-                padding: 140px 0px 180px;
-    
+                padding: 230px 0px 180px;
+
                 .tag {
                     padding-right: 30px;
                     border-radius: 40px;
                     display: inline-block;
                     margin-bottom: 45px;
                     background-color: #efeff0;
-    
+
                     .inner-tag {
                         color: #fff;
                         font-weight: 500;
@@ -27,64 +86,58 @@
                         display: inline-block;
                         background-color: #0000fe;
                     }
-    
+
                     p {
                         display: inline-block;
                         font-weight: 500;
                         margin: 0;
                     }
                 }
-    
+
                 h1 {
                     color: #000;
-                    font-size: 54px;
+                    font-size: 56px;
                     font-weight: 700;
-                    line-height: 1.65;
+                    line-height: 1.2;
                     padding-bottom: 35px;
                     font-family: "Fira Sans";
-    
+
                     span {
-                        font-size: 52px;
+                        font-size: 56px;
                         color: #0000fe;
                         display: inline-block;
-                        height: 80px;
-                        line-height: 80px;
-                        white-space: nowrap;
-    
-                        i {
-                            font-style: normal;
-                        }
+                        white-space: nowrap;                        
                     }
-    
+
                     @keyframes anime {
                         0% {
                             font-size: 52px;
                         }
-    
+
                         50% {
                             font-size: 64px;
                         }
-    
+
                         100% {
                             font-size: 52px;
                         }
                     }
                 }
-    
+
                 .text-p {
                     color: #4f4f4f;
                     font-size: 20px;
                     line-height: 1.6;
                     padding-bottom: 40px;
                 }
-    
+
                 .btns {
                     display: flex;
                     position: absolute;
                     z-index: 1;
-    
-                   
-    
+
+
+
                     .play-btn {
                         display: inline-block;
                         position: relative;
@@ -99,7 +152,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-    
+
                         .circle {
                             border: 2px solid rgba(0, 0, 0, 0.15);
                             border-radius: 50%;
@@ -109,101 +162,52 @@
                             position: absolute;
                             animation-play-state: running;
                             animation: scaleBorder 3s linear 0s infinite;
-    
+
                             &.circle2 {
                                 animation-delay: 1.5s;
                             }
-    
+
                             &.circle3 {
                                 animation-delay: 3s;
                             }
                         }
-    
+
                         @keyframes scaleBorder {
                             0% {
                                 transform: scale(1);
                                 opacity: 0;
                             }
-    
+
                             20% {
                                 transform: scale(1.24);
                                 opacity: 1;
                             }
-    
+
                             100% {
                                 transform: scale(2.1);
                                 opacity: 0;
                             }
                         }
-    
+
                         &:hover {
                             background-color: #e3002a;
                         }
                     }
                 }
             }
-            
+
         }
-    
+
         .banner-img {
             position: absolute;
-            // top: 90px;
-            top: 0px;
             right: -140px;
+            width: 50%;
+            top: 0px;
             img {
-                max-width: 100%;
+                width: 100%;
             }
         }
     }
-    
-
-    &>span {
-        display: inline-block;
-        position: absolute;
-        z-index: 1;
-    }
-
-    .dot1 {
-        width: 7px;
-        height: 7px;
-        top: 200px;
-        left: 150px;
-        background-color: #00a4ff;
-        box-shadow: 0px 6px 13px 0px rgba(0, 0, 254, .25);
-        animation: dot1 12s infinite alternate
-    }
-
-    .dot2 {
-        top: 150px;
-        left: 25%;
-        width: 10px;
-        height: 10px;
-        background-color: #000;
-        box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, .25);
-        animation: dot2 18s infinite alternate;
-    }
-
-    .dot3 {
-        bottom: 150px;
-        left: 150px;
-        width: 10px;
-        height: 10px;
-        background-color: #ff5520;
-        box-shadow: 0px 6px 13px 0px rgba(255, 85, 32, .25);
-        animation: dot1 12s infinite alternate;
-    }
-
-    .dot4 {
-        width: 10px;
-        height: 10px;
-        right: 50%;
-        bottom: 200px;
-        background-color: #0000fe;
-        box-shadow: 0px 6px 13px 0px rgba(0, 0, 254, .25);
-        animation: dot2 18s infinite alternate;
-    }
-
-    
 
     @keyframes dot1 {
         0% {
@@ -255,51 +259,41 @@
         100% {
             transform: translate(0px, 0px) rotate(0deg) scale(1);
         }
-    } 
-    
-    .text-rotator{
-        .text {
+    }
+
+    .text-rotator {
+
+        .word {
             position: absolute;
-            width: 450px;
-            left: 50%;
-            margin-left: -225px;
-            height: 40px;
-            top: 50%;
-            margin-top: -20px;
-          }
-          
-          h1 {
-            display: inline-block;
-            vertical-align: top;
-            margin: 0;
-          }
-          
-          .word {
-            position: absolute;
+            left: 0;
             opacity: 0;
-          }
-          span.texts{
-            display: inline!important;
-            padding-left: 20px;
-          }
-          span{
-            line-height: 88px!important;
-          }
-          .letter {
+        }
+
+        span.texts {
+            width: 369px;
+            height: 52px;
+            position: relative;
+
+        }
+
+        .letter {
             display: inline-block;
             position: relative;
             float: left;
             transform: translateZ(25px);
             transform-origin: 50% 50% 25px;
-          }
-          
-          .letter.out {
+        }
+
+        .letter.out {
             transform: rotateX(90deg);
             animation: anime1 .7s;
-          }
-          
-          .letter.behind { transform: rotateX(-90deg); }
-          @keyframes anime1 {
+        }
+
+        .letter.behind {
+            transform: rotateX(-90deg);
+        }
+
+        @keyframes anime1 {
             0% {
                 font-size: 48px;
             }
@@ -312,9 +306,10 @@
                 font-size: 48px;
             }
         }
-          .letter.in {
+
+        .letter.in {
             animation: anime1 .3s;
             transform: rotateX(0deg);
-          }
+        }
     }
 }

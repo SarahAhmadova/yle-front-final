@@ -1,5 +1,29 @@
 $(document).ready(function () {
 
+    $(".navbar-toggler").click(()=>{
+        $(".sidebar .menu-box").css("transform","translateX(0)");
+        $(".sidebar").fadeIn();
+    })
+
+    $(".sidebar .side-menu .dropdown>a").click(function (e) {
+        e.preventDefault();
+        let innerMenu = $(e.target).parents(".nav-item").find(".inner-menu");
+        if (innerMenu.css("display") == "none") {
+            $(e.target).parents(".nav-item").find(".inner-menu").slideDown();
+            console.log(true);
+        } else {
+            $(e.target).parents(".nav-item").find(".inner-menu").slideUp();
+            console.log("false");
+        }
+    });
+
+    $(".sidebar .close-btn").click(function () {
+        $(".sidebar .menu-box").css("transform","translateX(100%)");
+        $(".sidebar").fadeOut();
+    });
+
+
+
     if ($(".wow").length) {
         new WOW().init();
     }
@@ -8,8 +32,8 @@ $(document).ready(function () {
         $('.SlectBox').SumoSelect();
     }
 
-    if ($('#category-carousel').length) {
-        $('#category-carousel').owlCarousel({
+    if ($('.owl-carousel').length) {
+        $('.owl-carousel').owlCarousel({
             loop: true,
 
             margin: 30,
@@ -17,52 +41,15 @@ $(document).ready(function () {
                 0: {
                     items: 1
                 },
-                760: {
+                700: {
                     items: 2
                 },
-                1198: {
+                1000: {
                     items: 3
                 }
             }
         });
     }
-
-    if ($('#news-carousel').length) {
-        $('#news-carousel').owlCarousel({
-            loop: true,
-            margin: 30,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                760: {
-                    items: 2
-                },
-                1198: {
-                    items: 3
-                }
-            }
-        });
-    }
-
-    if ($('#clients-carousel').length) {
-        $('#clients-carousel').owlCarousel({
-            loop: true,
-            margin: 30,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                760: {
-                    items: 2
-                },
-                1198: {
-                    items: 4
-                }
-            }
-        });
-    }
-
 
     let left = -70;
     let right = -70;
@@ -84,7 +71,7 @@ $(document).ready(function () {
         }
     });
 
-    
+
     var words = document.querySelectorAll('.text-rotator .word');
     var wordArray = [];
     var currentWord = 0;

@@ -24,16 +24,14 @@
     <header>
         <nav class="navbar navbar-expand-lg  ">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="/assets/img/logo3.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="#"><img src="/assets/img/logo3.png" alt=""></a>
+                <button class="navbar-toggler" type="button" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse justify-content-between">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a href="#">Home</a>
+                            <a href="#" class="">Home</a>
                             <ul class="dropdown-menu">
                                 <li><a href="index.html">Home Page 1</a></li>
                                 <li><a href="#">Home Page 2</a></li>
@@ -84,6 +82,71 @@
                 </div>
             </div>
         </nav>
+        <div class="sidebar">
+
+            <div class="menu-box">
+                <div class="close-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="logo"><img src="/assets/img/footer/logo4.png" alt=""></div>
+                <ul class="side-menu">
+                    <li class="nav-item dropdown">
+                        <a href="#">Home <i class="fas fa-angle-down"></i></a>
+                        <div class="inner-menu">
+                            <ul>
+                                <li><a href="#">Home Page 1</a></li>
+                                <li><a href="#">Home Page 2</a></li>
+                                <li><a href="#">Home Page 3</a></li>
+                                <li><a href="#">Home Page 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Course <i class="fas fa-angle-down"></i></a>
+                        <div class="inner-menu">
+                            <ul>
+                                <li><a target="_blank" href="course.html">Course</a></li>
+                                <li><a target="_blank" href="course-details.html">Course Details</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Pages <i class="fas fa-angle-down"></i></a>
+                        <div class="inner-menu">
+                            <ul>
+                                <li><a target="_blank" href="gallery.html">Gallery</a></li>
+                                <li><a target="_blank" href="contact.html">Contact</a></li>
+                                <li><a target="_blank" href="event.html">Event</a></li>
+                                <li><a target="_blank" href="event-details.html">Event Details</a></li>
+                                <li><a target="_blank" href="faq.html">Faq</a></li>
+                                <li><a target="_blank" href="404.html">404</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Blog <i class="fas fa-angle-down"></i></a>
+                        <div class="inner-menu">
+                            <ul>
+                                <li><a target="_blank" href="blog-1.html">Blog 1</a></li>
+                                <li><a target="_blank" href="blog-2.html">Blog 2</a></li>
+                                <li><a target="_blank" href="blog-details-1.html">Blog Details 1</a></li>
+                                <li><a target="_blank" href="blog-details-2.html">Blog Details 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Instructor <i class="fas fa-angle-down"></i></a>
+                        <div class="inner-menu">
+                            <ul>
+                                <li><a target="_blank" href="instructor.html">Instructor</a></li>
+                                <li><a target="_blank" href="instructor-details.html">Instructor Details</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
         <section id="breadcrumb" style="background-image: url('/assets/img/bn-bg1.jpg');">
@@ -162,15 +225,15 @@
             <div class="container">
                 <form>
                     <div class="d-flex justify-content-between">
-                           <input type="text" name="name" placeholder="Your name *">
-                            <input type="email" name="email" placeholder="Your Email *">
-                            <input type="text" name="phone" placeholder="Your Phone *">
-                     </div>
+                        <input type="text" name="name" placeholder="Your name *">
+                        <input type="email" name="email" placeholder="Your Email *">
+                        <input type="text" name="phone" placeholder="Your Phone *">
+                    </div>
                     <textarea name="#" placeholder="Write your message here*"></textarea>
                     <button type="submit">Submit Now <i class="fas fa-arrow-right"></i></button>
-                 </form>
+                </form>
             </div>
-         </section>
+        </section>
     </main>
 
     <footer id="footer">
@@ -262,7 +325,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
-
+        
+    <!-- ------ Main js -------- -->
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>

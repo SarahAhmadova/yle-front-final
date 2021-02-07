@@ -21,7 +21,11 @@
         display: flex;
 
         &::before {
-            content: url(/assets/img/r-bg.png);
+            content: "";
+            background-image: url(/assets/img/r-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 70%;
             position: absolute;
             z-index: -1;
             left: 0;

@@ -1,0 +1,338 @@
+@media screen and (max-width: 1400px) {
+    #banner {
+        .animatedSquares {
+            width: 1200px;
+            height: 700px;
+        }
+
+        .content {
+            .banner-img {
+                right: 0px;
+            }
+
+            .container {
+                .banner-content {
+                    max-width: 540px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1240px) {
+    #banner {
+        .animatedSquares {
+            width: 900px;
+            height: 600px;
+        }
+
+        .content {
+            .banner-img {
+                right: 0px;
+            }
+
+            .container {
+                .banner-content {
+                    max-width: 540px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        .navbar {
+            button {
+                position: relative;
+
+                i {
+                    font-size: 30px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #e3002a;
+                }
+            }
+        }
+
+        .navbar-collapse {
+
+            &.show,
+            &.collapsing {
+                position: absolute;
+
+                .navbar-nav {
+                    flex-direction: column;
+                    width: 30%;
+                    height: auto;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: black;
+                    flex-direction: column;
+
+                    li {
+                        a {
+                            color: #fff;
+                        }
+
+                        .dropdown-menu {
+                            display: none !important;
+                            visibility: visible !important;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    #banner {
+        .banner-content {
+            max-width: 100% !important;
+        }
+
+        .banner-img {
+            display: none;
+        }
+    }
+
+    .search-area {
+        .container {
+            text-align: center;
+        }
+    }
+
+    #courses {
+        strong {
+            font-size: 20px !important;
+        }
+    }
+
+    #regstr-banner {
+        .content {
+            &::before {
+                width: 100%;
+            }
+
+            .right-img {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .search-area {
+
+        .shape1,
+        .shape2 {
+            display: none;
+        }
+
+        form {
+            .form-div {
+                // display: flex;
+                flex-direction: column !important;
+                align-items: center;
+
+                .select-area {
+                    margin-bottom: 10px;
+                }
+
+                .SumoSelect {
+                    width: 130px !important;
+                }
+            }
+        }
+    }
+
+    #courses {
+        .card-box {
+            margin: 0 auto;
+            max-width: 270px;
+            margin-bottom: 30px;
+        }
+    }
+
+    footer {
+
+        .covered-btn {
+            margin: 0;
+        }
+
+        .box {
+            margin-bottom: 30px!important;
+            padding: 0!important;
+        }
+
+        h3 {
+            &::after {
+                bottom: -2px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        #banner {
+            text-align: center !important;
+
+            .tag {
+                background-color: transparent !important;
+                padding-right: 0 !important;
+                margin-bottom: 20px !important;
+
+                span {
+                    margin-bottom: 15px;
+                }
+            }
+
+            .banner-content {
+                padding-top: 170px !important;
+
+                .btns {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .text-rotator {
+                position: relative;
+
+                h1 {
+                    font-size: 34px !important;
+                    line-height: 1 !important;
+                    padding: 0 !important;
+
+                    span {
+                        font-size: 34px !important;
+
+                        &.texts {
+                            width: 230px;
+                            height: 29px;
+                            line-height: 1 !important;
+                            padding: 0 !important;
+                        }
+
+                        &.word {
+                            display: flex !important;
+                            justify-content: center;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .search-area {
+            .search-form {
+                padding: 20px 0 !important;
+
+                .form-div .SumoSelect {
+                    width: auto !important;
+                    display: inline-block;
+                }
+            }
+
+            p {
+                font-weight: 400;
+
+                span {
+                    font-size: 15px;
+                    // font-weight: normal;
+                }
+
+                label>i {
+                    background-image: unset;
+                    font-style: unset;
+                    height: 23px;
+                    font-size: 11px;
+
+                    &::after {
+                        content: "\f078";
+                        font-family: "Font Awesome 5 Free";
+                    }
+                }
+            }
+        }
+
+        .section-title {
+            .watermark {
+                font-size: 60px;
+                top: -30px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+        }
+
+        #categories {
+            padding: 85px 0 !important;
+
+            .item {
+                h3 {
+                    padding-bottom: 0 !important;
+
+                    a {
+                        font-size: 20px !important;
+                    }
+                }
+            }
+        }
+
+        #courses{
+            .covered-btn{
+                margin-right: 0!important;
+            }
+        }
+
+        #regstr-banner {
+            .content {
+                padding: 20px;
+
+                h3 {
+                    font-size: 24px !important;
+                }
+            }
+
+        }
+
+        #testimonial{
+            padding-bottom: 10px!important;
+        }
+
+        #blog{
+            .owl-dot{
+                background-color: transparent!important;
+            }
+        }
+
+        #subscribe {
+            .container {
+                .content {
+                    h3{
+                        font-size: 20px;
+                    }
+                    img {
+                        display: none !important;
+                    }
+
+                    .mail-form {
+                        padding-left: 0;
+                        input{
+                            &::placeholder{
+                                font-size: 12px!important
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

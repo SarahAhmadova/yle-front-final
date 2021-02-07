@@ -8,6 +8,11 @@ header {
 
     .navbar {
         background-color: #fff;
+        .navbar-toggler{
+           box-shadow: none;
+           outline: none;
+            
+        }
 
         .container {
             padding: 7px;
@@ -191,6 +196,7 @@ header {
                 width: 160px;
                 margin: 0 auto;
                 margin-bottom: 30px;
+                text-align: center;
             }
             .side-menu {
                 color: #fff;

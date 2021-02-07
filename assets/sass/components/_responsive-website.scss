@@ -126,6 +126,36 @@
 }
 
 @media screen and (max-width: 767px) {
+    .navbar{
+        padding: 0!important;
+        img{
+            width: 80%;
+        }
+    }
+    .sidebar{
+        .menu-box{
+            width: 210px!important;
+            padding: 55px 15px 15px!important
+        }
+    }
+    #breadcrumb{
+        h2{
+            font-size: 30px!important;
+        }
+    }
+    #about-page{
+        #about{
+            padding-top: 60px!important;
+        }
+        .img-box{
+            padding: 0!important;
+            text-align: center;
+            margin-bottom: 60px;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
     .search-area {
 
         .shape1,

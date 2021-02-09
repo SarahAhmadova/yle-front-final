@@ -1,228 +1,263 @@
-body {
-    position: relative;
+html {
+    scroll-behavior: smooth;
 
-    a {
-        text-decoration: none;
-        color: inherit;
-
-        &:hover {
-            color: inherit;
-        }
-    }
-
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0 !important;
-    }
-
-    .container {
-        max-width: 1200px;
-    }
-
-    input,
-    button,
-    button:focus {
-        outline: none;
-    }
-
-    .covered-btn {
-        color: #fff;
-        z-index: 1;
-        width: 160px;
-        height: 55px;
-        display: inline-block;
-        overflow: hidden;
+    body {
         position: relative;
-        text-align: center;
-        font-weight: 700;
-        line-height: 55px;
-        border-radius: 40px;
-        background-color: #ff5520;
-        margin-right: 35px;
 
-        &::after {
+        .loader{
+            background-color: #fff;
+            position: fixed;
             top: 0;
-            width: 0;
-            left: -40%;
-            content: "";
-            z-index: -1;
-            height: 100%;
-            position: absolute;
-            transform: skew(50deg);
-            transition-duration: 0.6s;
-            transform-origin: top left;
-            background-color: #0000fe;
-        }
-
-        &:hover {
-            &::after {
-                height: 100%;
-                width: 150%;
-            }
-        }
-    }
-
-    .pagination {
-        display: flex;
-        justify-content: center;
-
-        a {
-            color: #000;
-            width: 45px;
-            height: 45px;
-            font-size: 18px;
-            font-weight: 700;
-            margin: 0px 5px;
-            line-height: 45px;
-            text-align: center;
-            display: inline-block;
-            font-family: "Fira Sans";
-            background-color: #ffffff;
-            transition: 0.4s all;
-
-            &:hover {
-                color: #fff;
-                background-color: #0000fe;
-            }
-        }
-    }
-
-    .mark {
-        left: 0;
-        bottom: -60px;
-        opacity: 0.05;
-        line-height: 1;
-        color: #00003d;
-        font-weight: 700;
-        font-size: 265px;
-        position: absolute;
-        font-family: "Fira Sans";
-    }
-
-    #courses,
-    #news {
-        background-color: #f7f7f7;
-
-        .section-title {
-            .watermark {
-                color: #fff;
-                opacity: 0.7;
-            }
-        }
-    }
-
-    .section-title {
-        position: relative;
-        font-family: "Roboto";
-        max-width: 590px;
-        text-align: center;
-        margin: auto;
-
-        .watermark {
             left: 0;
             right: 0;
-            top: -60px;
-            opacity: 0.04;
-            color: #53536c;
-            font-family: "Roboto";
-            line-height: 1;
-            font-size: 100px;
-            font-weight: 900;
-            margin-bottom: 0;
-            text-align: center;
-            position: absolute;
-        }
-
-        span {
-            font-size: 18px;
-            font-weight: 700;
-            color: #0000fe;
-            padding: 0px 15px;
-            position: relative;
-
-            &::before,
-            &::after {
-                content: "";
+            bottom: 0;
+            z-index: 20;
+            img{
                 position: absolute;
-                width: 8px;
-                bottom: 7px;
-                height: 2px;
-                background-color: #0000fe;
-            }
-
-            &:before {
-                left: 0;
-            }
-
-            &::after {
-                right: 0;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
             }
         }
 
-        h2 {
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 1.125;
-            padding: 15px 0px 20px;
-            font-family: "Fira Sans";
+        #toTopBtn {
+            width: 45px;
+            right: 15px;
+            z-index: 5;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            bottom: 20px;
+            display: none;
+            position: fixed;
+            line-height: 45px;
+            background-color: #e3002a;
+            color: #fff;
         }
-    }
 
-    p {
-        color: #555555;
-        font-size: 16px;
-        line-height: 1.625;
-        font-family: "Roboto";
-    }
+        a {
+            text-decoration: none;
+            color: inherit;
 
-    h3,
-    h4 {
-        margin: 0;
-        font-family: "Fira Sans";
-    }
+            &:hover {
+                color: inherit;
+            }
+        }
 
-    h3 {
-        color: #000;
-        font-size: 24px;
-        font-weight: 700;
-        padding-bottom: 10px;
-    }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 !important;
+        }
 
-    h4 {
-        color: #000;
-        font-size: 14px;
-        font-weight: 700;
-    }
+        .container {
+            max-width: 1200px;
+        }
 
-    .owl-dots {
-        margin-top: 15px;
-        text-align: center;
-
-        button {
+        input,
+        button,
+        button:focus {
             outline: none;
         }
 
-        .owl-dot {
-            background: #fff;
+        .covered-btn {
+            color: #fff;
+            z-index: 1;
+            width: 160px;
+            height: 55px;
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            font-weight: 700;
+            line-height: 55px;
+            border-radius: 40px;
+            background-color: #ff5520;
+            margin-right: 35px;
 
-            span {
-                display: inline-block;
-                width: 28px;
-                height: 5px;
-                margin: 0px 5px;
-                border-radius: 30%;
-                display: inline-block;
-                background-color: #ececed;
-                transition: all .3s;
+            &::after {
+                top: 0;
+                width: 0;
+                left: -40%;
+                content: "";
+                z-index: -1;
+                height: 100%;
+                position: absolute;
+                transform: skew(50deg);
+                transition-duration: 0.6s;
+                transform-origin: top left;
+                background-color: #0000fe;
             }
 
-            &:focus {}
+            &:hover {
+                &::after {
+                    height: 100%;
+                    width: 150%;
+                }
+            }
+        }
 
-            &.active {
-                span {
-                    width: 38px;
+        .pagination {
+            display: flex;
+            justify-content: center;
+
+            a {
+                color: #000;
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
+                font-weight: 700;
+                margin: 0px 5px;
+                line-height: 45px;
+                text-align: center;
+                display: inline-block;
+                font-family: "Fira Sans";
+                background-color: #ffffff;
+                transition: 0.4s all;
+
+                &:hover {
+                    color: #fff;
                     background-color: #0000fe;
+                }
+            }
+        }
+
+        .mark {
+            left: 0;
+            bottom: -60px;
+            opacity: 0.05;
+            line-height: 1;
+            color: #00003d;
+            font-weight: 700;
+            font-size: 265px;
+            position: absolute;
+            font-family: "Fira Sans";
+        }
+
+        #courses,
+        #news {
+            background-color: #f7f7f7;
+
+            .section-title {
+                .watermark {
+                    color: #fff;
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .section-title {
+            position: relative;
+            font-family: "Roboto";
+            max-width: 590px;
+            text-align: center;
+            margin: auto;
+
+            .watermark {
+                left: 0;
+                right: 0;
+                top: -60px;
+                opacity: 0.04;
+                color: #53536c;
+                font-family: "Roboto";
+                line-height: 1;
+                font-size: 100px;
+                font-weight: 900;
+                margin-bottom: 0;
+                text-align: center;
+                position: absolute;
+            }
+
+            span {
+                font-size: 18px;
+                font-weight: 700;
+                color: #0000fe;
+                padding: 0px 15px;
+                position: relative;
+
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 8px;
+                    bottom: 7px;
+                    height: 2px;
+                    background-color: #0000fe;
+                }
+
+                &:before {
+                    left: 0;
+                }
+
+                &::after {
+                    right: 0;
+                }
+            }
+
+            h2 {
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 1.125;
+                padding: 15px 0px 20px;
+                font-family: "Fira Sans";
+            }
+        }
+
+        p {
+            color: #555555;
+            font-size: 16px;
+            line-height: 1.625;
+            font-family: "Roboto";
+        }
+
+        h3,
+        h4 {
+            margin: 0;
+            font-family: "Fira Sans";
+        }
+
+        h3 {
+            color: #000;
+            font-size: 24px;
+            font-weight: 700;
+            padding-bottom: 10px;
+        }
+
+        h4 {
+            color: #000;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .owl-dots {
+            margin-top: 15px;
+            text-align: center;
+
+            button {
+                outline: none;
+            }
+
+            .owl-dot {
+                background: #fff;
+
+                span {
+                    display: inline-block;
+                    width: 28px;
+                    height: 5px;
+                    margin: 0px 5px;
+                    border-radius: 30%;
+                    display: inline-block;
+                    background-color: #ececed;
+                    transition: all .3s;
+                }
+
+                &:focus {}
+
+                &.active {
+                    span {
+                        width: 38px;
+                        background-color: #0000fe;
+                    }
                 }
             }
         }

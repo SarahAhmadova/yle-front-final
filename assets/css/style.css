@@ -1,36 +1,73 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap");
-body {
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
   position: relative;
 }
 
-body a {
+html body .loader {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+}
+
+html body .loader img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+html body #toTopBtn {
+  width: 45px;
+  right: 15px;
+  z-index: 5;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  bottom: 20px;
+  display: none;
+  position: fixed;
+  line-height: 45px;
+  background-color: #e3002a;
+  color: #fff;
+}
+
+html body a {
   text-decoration: none;
   color: inherit;
 }
 
-body a:hover {
+html body a:hover {
   color: inherit;
 }
 
-body ul {
+html body ul {
   list-style: none;
   margin: 0;
   padding: 0 !important;
 }
 
-body .container {
+html body .container {
   max-width: 1200px;
 }
 
-body input,
-body button,
-body button:focus {
+html body input,
+html body button,
+html body button:focus {
   outline: none;
 }
 
-body .covered-btn {
+html body .covered-btn {
   color: #fff;
   z-index: 1;
   width: 160px;
@@ -46,7 +83,7 @@ body .covered-btn {
   margin-right: 35px;
 }
 
-body .covered-btn::after {
+html body .covered-btn::after {
   top: 0;
   width: 0;
   left: -40%;
@@ -63,12 +100,12 @@ body .covered-btn::after {
   background-color: #0000fe;
 }
 
-body .covered-btn:hover::after {
+html body .covered-btn:hover::after {
   height: 100%;
   width: 150%;
 }
 
-body .pagination {
+html body .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,7 +114,7 @@ body .pagination {
           justify-content: center;
 }
 
-body .pagination a {
+html body .pagination a {
   color: #000;
   width: 45px;
   height: 45px;
@@ -93,12 +130,12 @@ body .pagination a {
   transition: 0.4s all;
 }
 
-body .pagination a:hover {
+html body .pagination a:hover {
   color: #fff;
   background-color: #0000fe;
 }
 
-body .mark {
+html body .mark {
   left: 0;
   bottom: -60px;
   opacity: 0.05;
@@ -110,18 +147,18 @@ body .mark {
   font-family: "Fira Sans";
 }
 
-body #courses,
-body #news {
+html body #courses,
+html body #news {
   background-color: #f7f7f7;
 }
 
-body #courses .section-title .watermark,
-body #news .section-title .watermark {
+html body #courses .section-title .watermark,
+html body #news .section-title .watermark {
   color: #fff;
   opacity: 0.7;
 }
 
-body .section-title {
+html body .section-title {
   position: relative;
   font-family: "Roboto";
   max-width: 590px;
@@ -129,7 +166,7 @@ body .section-title {
   margin: auto;
 }
 
-body .section-title .watermark {
+html body .section-title .watermark {
   left: 0;
   right: 0;
   top: -60px;
@@ -144,7 +181,7 @@ body .section-title .watermark {
   position: absolute;
 }
 
-body .section-title span {
+html body .section-title span {
   font-size: 18px;
   font-weight: 700;
   color: #0000fe;
@@ -152,7 +189,7 @@ body .section-title span {
   position: relative;
 }
 
-body .section-title span::before, body .section-title span::after {
+html body .section-title span::before, html body .section-title span::after {
   content: "";
   position: absolute;
   width: 8px;
@@ -161,15 +198,15 @@ body .section-title span::before, body .section-title span::after {
   background-color: #0000fe;
 }
 
-body .section-title span:before {
+html body .section-title span:before {
   left: 0;
 }
 
-body .section-title span::after {
+html body .section-title span::after {
   right: 0;
 }
 
-body .section-title h2 {
+html body .section-title h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.125;
@@ -177,46 +214,46 @@ body .section-title h2 {
   font-family: "Fira Sans";
 }
 
-body p {
+html body p {
   color: #555555;
   font-size: 16px;
   line-height: 1.625;
   font-family: "Roboto";
 }
 
-body h3,
-body h4 {
+html body h3,
+html body h4 {
   margin: 0;
   font-family: "Fira Sans";
 }
 
-body h3 {
+html body h3 {
   color: #000;
   font-size: 24px;
   font-weight: 700;
   padding-bottom: 10px;
 }
 
-body h4 {
+html body h4 {
   color: #000;
   font-size: 14px;
   font-weight: 700;
 }
 
-body .owl-dots {
+html body .owl-dots {
   margin-top: 15px;
   text-align: center;
 }
 
-body .owl-dots button {
+html body .owl-dots button {
   outline: none;
 }
 
-body .owl-dots .owl-dot {
+html body .owl-dots .owl-dot {
   background: #fff;
 }
 
-body .owl-dots .owl-dot span {
+html body .owl-dots .owl-dot span {
   display: inline-block;
   width: 28px;
   height: 5px;
@@ -228,7 +265,7 @@ body .owl-dots .owl-dot span {
   transition: all .3s;
 }
 
-body .owl-dots .owl-dot.active span {
+html body .owl-dots .owl-dot.active span {
   width: 38px;
   background-color: #0000fe;
 }
@@ -338,15 +375,16 @@ header .navbar .navbar-nav .dropdown .dropdown-menu li a {
   padding: 10px 25px;
   display: inline-block;
   width: 100%;
-}
-
-header .navbar .navbar-nav .dropdown .dropdown-menu li a:hover {
-  background-color: blue;
-  color: #fff;
+  border: none;
 }
 
 header .navbar .navbar-nav .dropdown .dropdown-menu li:last-child a {
   border-bottom: 2px solid blue;
+}
+
+header .navbar .navbar-nav .dropdown .dropdown-menu li:hover a {
+  background-color: blue;
+  color: #fff;
 }
 
 header .navbar .navbar-nav .dropdown:hover .dropdown-menu {
@@ -1816,10 +1854,6 @@ header .sidebar .menu-box .side-menu .nav-item a {
   overflow: visible;
 }
 
-#blog #news-carousel .owl-dot {
-  background-color: #f7f7f7;
-}
-
 #blog #news-carousel .owl-item {
   opacity: 0;
   -webkit-transition: opacity .5s;
@@ -3071,6 +3105,10 @@ header .sidebar .menu-box .side-menu .nav-item a {
 
 #about .text-content .video-blok .video-box img {
   width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 #about .text-content .video-blok .video-box a {
@@ -3784,6 +3822,12 @@ header .sidebar .menu-box .side-menu .nav-item a {
   }
 }
 
+@media screen and (min-width: 1001px) {
+  .sidebar {
+    display: none !important;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   header .navbar button {
     position: relative;
@@ -3844,10 +3888,6 @@ header .sidebar .menu-box .side-menu .nav-item a {
   .navbar img {
     width: 80%;
   }
-  .sidebar .menu-box {
-    width: 210px !important;
-    padding: 55px 15px 15px !important;
-  }
   #breadcrumb h2 {
     font-size: 30px !important;
   }
@@ -3861,6 +3901,9 @@ header .sidebar .menu-box .side-menu .nav-item a {
   }
   #about-page .img-box img {
     max-width: 100%;
+  }
+  #about-page .feature-box {
+    margin-bottom: 25px;
   }
   .search-area .shape1,
   .search-area .shape2 {
@@ -3886,6 +3929,17 @@ header .sidebar .menu-box .side-menu .nav-item a {
     max-width: 270px;
     margin-bottom: 30px;
   }
+  #course-details .course-widget-wrap {
+    margin: 50px !important;
+  }
+  #course-details .course-widget-wrap .video-widget {
+    padding: 50px;
+    background-color: #2b2b2f;
+    border-radius: 20px;
+  }
+  #course-details .accordion .accordion-button h3 {
+    text-align: start;
+  }
   footer .covered-btn {
     margin: 0;
   }
@@ -3899,6 +3953,10 @@ header .sidebar .menu-box .side-menu .nav-item a {
 }
 
 @media screen and (max-width: 500px) {
+  .sidebar .menu-box {
+    width: 210px !important;
+    padding: 55px 15px 15px !important;
+  }
   body #banner {
     text-align: center !important;
   }
@@ -3968,11 +4026,11 @@ header .sidebar .menu-box .side-menu .nav-item a {
     font-family: "Font Awesome 5 Free";
   }
   body .section-title .watermark {
-    font-size: 60px;
+    font-size: 60px !important;
     top: -30px;
   }
   body .section-title h2 {
-    font-size: 26px;
+    font-size: 26px !important;
   }
   body #categories {
     padding: 85px 0 !important;
@@ -3985,6 +4043,36 @@ header .sidebar .menu-box .side-menu .nav-item a {
   }
   body #courses .covered-btn {
     margin-right: 0 !important;
+  }
+  body #course-details .accordion .accordion-button {
+    font-size: 14px !important;
+    padding: 3px 0px 3px 20px !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #course-details .accordion .accordion-button::after {
+    font-size: 25px !important;
+    top: 15% !important;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 1px !important;
+  }
+  body #course-details .accordion .accordion-button .details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body #course-details .accordion .accordion-button .details span {
+    margin: 0;
+    margin-left: 5px;
+  }
+  body #course-details .accordion .accordion-button h3 {
+    font-size: 16px !important;
   }
   body #regstr-banner .content {
     padding: 20px;
@@ -4019,5 +4107,122 @@ header .sidebar .menu-box .side-menu .nav-item a {
   body #subscribe .container .content .mail-form input::placeholder {
     font-size: 12px !important;
   }
+}
+
+.login-modal .modal-dialog {
+  max-width: 570px;
+}
+
+.login-modal .modal-dialog .modal-content {
+  border-radius: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+}
+
+.login-modal .modal-dialog .modal-content .modal-header {
+  z-index: 1;
+  border-radius: 10px 10px 0 0;
+  padding: 30px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 255, 0.7))), url(/assets/img/lg-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 255, 0.7)), url(/assets/img/lg-bg.jpg);
+}
+
+.login-modal .modal-dialog .modal-content .modal-header .content-text {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 310px;
+}
+
+.login-modal .modal-dialog .modal-content .modal-header .content-text p {
+  color: #fff;
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+.login-modal .modal-dialog .modal-content .modal-body {
+  padding: 50px;
+  text-align: center;
+}
+
+.login-modal .modal-dialog .modal-content .modal-body .content {
+  max-width: 370px;
+  margin: 0 auto;
+}
+
+.login-modal .modal-dialog .modal-content .tabs-nav-box {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.login-modal .modal-dialog .modal-content .tabs-nav-box .nav-tabs {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 30px;
+  border: 1px solid #e5e5e5;
+}
+
+.login-modal .modal-dialog .modal-content .tabs-nav-box .nav-tabs li a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 40px;
+  position: relative;
+  border: none;
+}
+
+.login-modal .modal-dialog .modal-content .tabs-nav-box .nav-tabs li a.active {
+  color: #fff;
+  background-color: #0000fe;
+}
+
+.login-modal .modal-dialog .modal-content button {
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #ff5520;
+  margin-top: 30px;
+}
+
+.login-modal .modal-dialog .modal-content input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.login-modal .modal-dialog .modal-content #login input:not([type="checkbox"]) {
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #efeff0;
+}
+
+.login-modal .modal-dialog .modal-content #signUp input:not([type="checkbox"]) {
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding-left: 20px;
+  border-radius: 10px;
+  background-color: #efeff0;
+  width: 45%;
+  margin: 0px 10px 20px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,8 @@
-$(document).ready(function () {
 
-    $(".navbar-toggler").click(()=>{
-        $(".sidebar .menu-box").css("transform","translateX(0)");
+$(document).ready(function () {
+    $(".loader").fadeOut();
+    $(".navbar-toggler").click(() => {
+        $(".sidebar .menu-box").css("transform", "translateX(0)");
         $(".sidebar").fadeIn();
     })
 
@@ -18,7 +19,7 @@ $(document).ready(function () {
     });
 
     $(".sidebar .close-btn").click(function () {
-        $(".sidebar .menu-box").css("transform","translateX(100%)");
+        $(".sidebar .menu-box").css("transform", "translateX(100%)");
         $(".sidebar").fadeOut();
     });
 
@@ -69,6 +70,20 @@ $(document).ready(function () {
                 $(".search-form .shape2").css("right", -70);
             }
         }
+       
+        if ($(this).scrollTop() > 30) {
+            $('#toTopBtn').fadeIn();
+        } else {
+            $('#toTopBtn').fadeOut();
+        }
+    });
+
+
+    $('#toTopBtn').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1000);
+        return false;
     });
 
 

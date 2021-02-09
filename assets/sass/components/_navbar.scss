@@ -8,10 +8,11 @@ header {
 
     .navbar {
         background-color: #fff;
-        .navbar-toggler{
-           box-shadow: none;
-           outline: none;
-            
+
+        .navbar-toggler {
+            box-shadow: none;
+            outline: none;
+
         }
 
         .container {
@@ -100,15 +101,18 @@ header {
                             padding: 10px 25px;
                             display: inline-block;
                             width: 100%;
-
-                            &:hover {
-                                background-color: blue;
-                                color: #fff;
-                            }
+                            border: none;
                         }
 
                         &:last-child a {
                             border-bottom: 2px solid blue;
+                        }
+
+                        &:hover {
+                            a {
+                                background-color: blue;
+                                color: #fff;
+                            }
                         }
                     }
                 }
@@ -180,7 +184,7 @@ header {
             background-color: #000;
             overflow: auto;
             transition: .7s;
-            
+
 
             .close-btn {
                 position: absolute;
@@ -188,16 +192,19 @@ header {
                 top: 15px;
                 left: 15px;
                 font-size: 20px;
-                i{
+
+                i {
                     color: #d60606;
                 }
             }
-            .logo{
+
+            .logo {
                 width: 160px;
                 margin: 0 auto;
                 margin-bottom: 30px;
                 text-align: center;
             }
+
             .side-menu {
                 color: #fff;
                 position: relative;

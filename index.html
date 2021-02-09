@@ -31,8 +31,11 @@
 </head>
 
 <body>
+   <div class="loader">
+      <img src="/assets/img/pre.svg" alt="">
+   </div>
    <header>
-      <nav class="navbar navbar-expand-lg  ">
+      <nav class="navbar navbar-expand-lg">
          <div class="container">
             <a class="navbar-brand" href="#"><img src="/assets/img/logo3.png" alt=""></a>
             <button class="navbar-toggler" type="button" aria-expanded="false">
@@ -43,7 +46,7 @@
                   <li class="nav-item dropdown">
                      <a href="#" class="">Home</a>
                      <ul class="dropdown-menu">
-                        <li><a href="#">Home Page 1</a></li>
+                        <li><a href="index.html">Home Page 1</a></li>
                         <li><a href="#">Home Page 2</a></li>
                         <li><a href="#">Home Page 3</a></li>
                         <li><a href="#">Home Page 4</a></li>
@@ -87,13 +90,13 @@
                </ul>
                <ul class="actions">
                   <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                  <li><a href="#"><i class="fas fa-user"></i></a></li>
+                  <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-user"></i></a>
+                  </li>
                </ul>
             </div>
          </div>
       </nav>
       <div class="sidebar">
-        
          <div class="menu-box">
             <div class="close-btn">
                <i class="fas fa-times"></i>
@@ -158,6 +161,72 @@
          </div>
       </div>
    </header>
+   <div class="login-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <div class="content-text">
+                  <a href="#"><img src="assets/img/footer/logo4.png" alt=""></a>
+                  <p>Boamco laboris nisi ut aliquip ex ea commodo conseq nderit in voluptate velit esse</p>
+               </div>
+            </div>
+            <div class="modal-body">
+               <div class="modal-signup-login-tab">
+                  <div class="tabs-nav-box">
+                     <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                           <a href="#login" id="login-tab" data-bs-toggle="tab" role="tab" aria-controls="login"
+                              aria-selected="true" class="nav-link active">Login</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <a href="#signUp" id="signUp-tab" data-bs-toggle="tab" role="tab" aria-controls="signUp"
+                              aria-selected="false" class="nav-link">Sign
+                              Up</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="tab-content" id="myTabContent">
+                     <div id="login" class="tab-pane fade show active" id="login" role="tabpanel"
+                        aria-labelledby="login-tab">
+                        <div class="content">
+                           <form action="#" method="post">
+                              <input type="text" placeholder="Username or email">
+                              <input type="text" placeholder="Password">
+                              <div class="d-flex justify-content-between">
+                                 <span><input type="checkbox">Remember me</span>
+                                 <a href="#">Forget Password?</a>
+                              </div>
+                              <button type="submit">Submit</button>
+                           </form>
+                           <p>Don’t have any account? <a href="#">Signup</a></p>
+                        </div>
+                     </div>
+                     <div id="signUp" class="tab-pane" id="signUp" role="tabpanel" aria-labelledby="signUp-tab">
+                        <div class="yl-sign-up-content pera-content text-center">
+                           <form>
+                              <input type="text" placeholder="First Name">
+                              <input type="text" placeholder="Last Name">
+                              <input type="email" placeholder="Email address">
+                              <input type="text" placeholder="Username">
+                              <input type="text" placeholder="Password">
+                              <input type="text" placeholder="Confirm password">
+                              <div class="">
+                                 <span><input type="checkbox">By clicking signup you are agree to our terms of
+                                    service</span>
+                              </div>
+                              <button>Submit</button>
+                           </form>
+                           <p>Already have an account? <a href="#">Log in</a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <a href="#" id="toTopBtn"><i class="fas fa-chevron-up"></i></a>
    <main>
       <section id="banner">
          <div class="animatedSquares">

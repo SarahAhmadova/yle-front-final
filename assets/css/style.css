@@ -3940,6 +3940,10 @@ header .sidebar .menu-box .side-menu .nav-item a {
   #course-details .accordion .accordion-button h3 {
     text-align: start;
   }
+  #instr-detail .ins-details .img-box {
+    width: 100% !important;
+    height: auto !important;
+  }
   footer .covered-btn {
     margin: 0;
   }
@@ -4079,6 +4083,18 @@ header .sidebar .menu-box .side-menu .nav-item a {
   }
   body #regstr-banner .content h3 {
     font-size: 24px !important;
+  }
+  body #instr-detail .img-box {
+    margin-bottom: 20px;
+  }
+  body #instr-detail .top {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  body #instr-detail .top .header {
+    margin-bottom: 20px;
   }
   body #testimonial {
     padding-bottom: 10px !important;

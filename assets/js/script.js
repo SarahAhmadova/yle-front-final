@@ -23,7 +23,13 @@ $(document).ready(function () {
         $(".sidebar").fadeOut();
     });
 
-
+    if ($('[data-fancybox]').length) {
+        $('[data-fancybox]').fancybox({
+            toolbar  : false,
+            smallBtn : true
+        });
+    }
+    
 
     if ($(".wow").length) {
         new WOW().init();
@@ -33,10 +39,9 @@ $(document).ready(function () {
         $('.SlectBox').SumoSelect();
     }
 
-    if ($('.owl-carousel').length) {
+    if ($('.owl-carousel').length>0) {
         $('.owl-carousel').owlCarousel({
             loop: true,
-
             margin: 30,
             responsive: {
                 0: {

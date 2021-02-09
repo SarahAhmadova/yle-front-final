@@ -220,6 +220,15 @@
         }
     }
 
+    #instr-detail {
+        .ins-details {
+            .img-box {
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+    }
+
 
     footer {
 
@@ -370,16 +379,18 @@
                     padding: 3px 0px 3px 20px !important;
                     flex-direction: column;
 
-                    &::after{
-                        font-size: 25px!important;
-                        top: 15%!important;
+                    &::after {
+                        font-size: 25px !important;
+                        top: 15% !important;
                         transform: translateY(-50%);
-                        left: 1px!important;
+                        left: 1px !important;
                     }
-                    .details{
+
+                    .details {
                         display: flex;
                         justify-content: space-between;
-                        span{
+
+                        span {
                             margin: 0;
                             margin-left: 5px;
                         }
@@ -401,6 +412,18 @@
                 }
             }
 
+        }
+
+        #instr-detail {
+            .img-box{
+                margin-bottom: 20px;
+            }
+            .top{
+                flex-direction: column!important;
+                .header{
+                    margin-bottom: 20px;
+                }
+            }
         }
 
         #testimonial {

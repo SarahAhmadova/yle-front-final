@@ -2,19 +2,23 @@
 $(document).ready(function () {
     $(".loader").fadeOut();
     $(".navbar-toggler").click(() => {
-        $(".sidebar .menu-box").css("transform", "translateX(0)");
         $(".sidebar").fadeIn();
+        $(".sidebar .menu-box").css("transform", "translateX(0)");
     })
 
+    $(".sidebar").click((e)=>{
+        if(e.target==document.querySelector(".sidebar")){
+            $(".sidebar .menu-box").css("transform", "translateX(100%)");
+            $(e.target).fadeOut();
+        }
+    });
     $(".sidebar .side-menu .dropdown>a").click(function (e) {
         e.preventDefault();
         let innerMenu = $(e.target).parents(".nav-item").find(".inner-menu");
         if (innerMenu.css("display") == "none") {
             $(e.target).parents(".nav-item").find(".inner-menu").slideDown();
-            console.log(true);
         } else {
             $(e.target).parents(".nav-item").find(".inner-menu").slideUp();
-            console.log("false");
         }
     });
 

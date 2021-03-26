@@ -210,11 +210,72 @@
             }
         }
 
+        .tabs-container {
+            #tabs {
+                li {
+                    width: 100%;
+                }
+            }
+        }
+
         .accordion {
             .accordion-button {
-                h3 {
-                    text-align: start;
+                font-size: 14px !important;
+                padding: 3px 0px 3px 20px !important;
+                flex-direction: column;
 
+                &::after {
+                    font-size: 25px !important;
+                    top: 15% !important;
+                    transform: translateY(-50%);
+                    left: 1px !important;
+                }
+
+                .details {
+                    display: flex;
+                    justify-content: space-between;
+
+                    span {
+                        margin: 0;
+                        margin-left: 5px;
+                    }
+                }
+
+                h3 {
+                    font-size: 16px !important;
+                    text-align: start;
+                }
+            }
+        }
+
+        .tab-area .tab-wrapper #curriculm .accordion .accordion-item .accordion-button h3 {
+            padding-left: 15px;
+        }
+
+        #instructor {
+            .course-instructor {
+                &>div {
+                    display: unset !important;
+                }
+
+                .ins-info {
+                    display: unset !important;
+                }
+
+                .instructor-text {
+                    margin: 20px 0;
+                }
+
+                .ins-btn {
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        #review {
+            form {
+                &>div {
+                    flex-direction: column;
                 }
             }
         }
@@ -229,7 +290,48 @@
         }
     }
 
+    #contact{
+        form{
+            &>div{
+                flex-direction: column;
+                input{
+                    width: 100%;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
 
+    #blog-details {
+
+        .comments-box {
+            .img-box{
+                img{
+                    width: 60px!important;
+                    height: 60px!important;
+                }
+            }
+            .user-comments .inner-comment {
+                margin-bottom: 35px;
+                margin-left: 30px;
+            }
+        }
+
+        .form-area {
+            &>div {
+                flex-direction: column;
+
+                .input-field {
+                    padding: 0;
+
+                    input {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+
+    }
     footer {
 
         .covered-btn {
@@ -372,6 +474,13 @@
         }
 
         #course-details {
+            .tabs-container {
+                #tabs {
+                    li {
+                        width: 100%;
+                    }
+                }
+            }
 
             .accordion {
                 .accordion-button {
@@ -401,6 +510,38 @@
                     }
                 }
             }
+
+            .tab-area .tab-wrapper #curriculm .accordion .accordion-item .accordion-button h3 {
+                padding-left: 15px;
+            }
+
+            #instructor {
+                .course-instructor {
+                    &>div {
+                        display: unset !important;
+                    }
+
+                    .ins-info {
+                        display: unset !important;
+                    }
+
+                    .instructor-text {
+                        margin: 20px 0;
+                    }
+
+                    .ins-btn {
+                        margin: 20px 0;
+                    }
+                }
+            }
+
+            #review {
+                form {
+                    &>div {
+                        flex-direction: column;
+                    }
+                }
+            }
         }
 
         #regstr-banner {
@@ -415,12 +556,14 @@
         }
 
         #instr-detail {
-            .img-box{
+            .img-box {
                 margin-bottom: 20px;
             }
-            .top{
-                flex-direction: column!important;
-                .header{
+
+            .top {
+                flex-direction: column !important;
+
+                .header {
                     margin-bottom: 20px;
                 }
             }

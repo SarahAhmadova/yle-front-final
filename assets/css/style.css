@@ -2019,29 +2019,29 @@ header .sidebar .menu-box .side-menu .nav-item a {
           transform: scale(1.2) rotate(5deg);
 }
 
-#blog-details {
+main #blog-details {
   padding: 100px 0px;
   background-color: #f1f1f3;
   color: #555555;
 }
 
-#blog-details .blog-box {
+main #blog-details .blog-box {
   background-color: #fff;
 }
 
-#blog-details .blog-box img {
+main #blog-details .blog-box img {
   width: 100%;
 }
 
-#blog-details .blog-box .blog-content {
+main #blog-details .blog-box .blog-content {
   padding: 40px;
 }
 
-#blog-details .blog-box .blog-content .blog-info {
+main #blog-details .blog-box .blog-content .blog-info {
   margin-bottom: 45px;
 }
 
-#blog-details .blog-box .blog-content .blog-info a {
+main #blog-details .blog-box .blog-content .blog-info a {
   font-size: 13px;
   font-weight: 700;
   margin-right: 25px;
@@ -2051,7 +2051,7 @@ header .sidebar .menu-box .side-menu .nav-item a {
   text-transform: uppercase;
 }
 
-#blog-details .blog-box .blog-content .blog-info a:not(:last-child)::after {
+main #blog-details .blog-box .blog-content .blog-info a:not(:last-child)::after {
   top: -3px;
   width: 2px;
   content: "";
@@ -2061,11 +2061,11 @@ header .sidebar .menu-box .side-menu .nav-item a {
   background-color: #0000fe;
 }
 
-#blog-details .blog-box .blog-content .blog-text p {
+main #blog-details .blog-box .blog-content .blog-text p {
   margin-bottom: 30px;
 }
 
-#blog-details .blog-box .blog-content .blog-text blockquote {
+main #blog-details .blog-box .blog-content .blog-text blockquote {
   font-size: 21px;
   font-style: italic;
   margin-bottom: 35px;
@@ -2075,13 +2075,13 @@ header .sidebar .menu-box .side-menu .nav-item a {
   font-family: "Roboto";
 }
 
-#blog-details .blog-box .blog-content .blog-text blockquote .quote-author {
+main #blog-details .blog-box .blog-content .blog-text blockquote .quote-author {
   font-style: normal;
   padding-left: 45px;
   position: relative;
 }
 
-#blog-details .blog-box .blog-content .blog-text blockquote .quote-author::before {
+main #blog-details .blog-box .blog-content .blog-text blockquote .quote-author::before {
   left: 0;
   top: 18px;
   height: 1px;
@@ -2091,17 +2091,17 @@ header .sidebar .menu-box .side-menu .nav-item a {
   background-color: #000;
 }
 
-#blog-details .blog-box .blog-content .blog-text blockquote .quote-author strong {
+main #blog-details .blog-box .blog-content .blog-text blockquote .quote-author strong {
   color: #000;
   font-size: 16px;
   margin-right: 5px;
 }
 
-#blog-details .blog-box .blog-content .blog-text blockquote .quote-author span {
+main #blog-details .blog-box .blog-content .blog-text blockquote .quote-author span {
   font-size: 14px;
 }
 
-#blog-details .blog-box .blog-content .post-cat a {
+main #blog-details .blog-box .blog-content .post-cat a {
   margin-right: 5px;
   padding: 10px 12px;
   border-radius: 30px;
@@ -2109,13 +2109,13 @@ header .sidebar .menu-box .side-menu .nav-item a {
   border: 1px solid #e5e5e5;
 }
 
-#blog-details .blog-box .blog-content .blog-share span {
+main #blog-details .blog-box .blog-content .blog-share span {
   color: #000;
   font-weight: 700;
   margin-right: 10px;
 }
 
-#blog-details .blog-box .blog-content .blog-share a {
+main #blog-details .blog-box .blog-content .blog-share a {
   width: 42px;
   color: #fff;
   height: 42px;
@@ -2128,101 +2128,101 @@ header .sidebar .menu-box .side-menu .nav-item a {
   transition: 0.3s all ease-in-out;
 }
 
-#blog-details .blog-box .blog-content .blog-share a:nth-child(2) {
+main #blog-details .blog-box .blog-content .blog-share a:nth-child(2) {
   background-color: #3b5998;
 }
 
-#blog-details .blog-box .blog-content .blog-share a:nth-child(3) {
+main #blog-details .blog-box .blog-content .blog-share a:nth-child(3) {
   background-color: #1da1f2;
 }
 
-#blog-details .blog-box .blog-content .blog-share a:nth-child(4) {
+main #blog-details .blog-box .blog-content .blog-share a:nth-child(4) {
   background-color: #0077b5;
 }
 
-#blog-details .box {
+main #blog-details .box {
   margin-top: 35px;
   background-color: #fff;
 }
 
-#blog-details .post-nav-box {
+main #blog-details .post-nav-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#blog-details .post-nav-box .next-box,
-#blog-details .post-nav-box .prev-box {
+main #blog-details .post-nav-box .next-box,
+main #blog-details .post-nav-box .prev-box {
   padding: 40px;
 }
 
-#blog-details .post-nav-box .next-box .nav-btn-box,
-#blog-details .post-nav-box .prev-box .nav-btn-box {
+main #blog-details .post-nav-box .next-box .nav-btn-box,
+main #blog-details .post-nav-box .prev-box .nav-btn-box {
   margin-bottom: 15px;
   padding-bottom: 15px;
   border-bottom: 2px solid #ff5520;
 }
 
-#blog-details .post-nav-box .next-box .nav-btn-box a,
-#blog-details .post-nav-box .prev-box .nav-btn-box a {
+main #blog-details .post-nav-box .next-box .nav-btn-box a,
+main #blog-details .post-nav-box .prev-box .nav-btn-box a {
   color: #000;
   font-weight: 700;
   font-size: 15px;
   display: block;
 }
 
-#blog-details .post-nav-box .next-box .nav-btn-box a i,
-#blog-details .post-nav-box .prev-box .nav-btn-box a i {
+main #blog-details .post-nav-box .next-box .nav-btn-box a i,
+main #blog-details .post-nav-box .prev-box .nav-btn-box a i {
   font-size: 14px;
   color: #0000fe;
 }
 
-#blog-details .post-nav-box .next-box h3,
-#blog-details .post-nav-box .prev-box h3 {
+main #blog-details .post-nav-box .next-box h3,
+main #blog-details .post-nav-box .prev-box h3 {
   color: #000;
   font-size: 18px;
 }
 
-#blog-details .post-nav-box .prev-box {
+main #blog-details .post-nav-box .prev-box {
   border-right: 2px solid #e5e5e5;
 }
 
-#blog-details .comments-box {
+main #blog-details .comments-box {
   padding: 35px;
 }
 
-#blog-details .comments-box .user-comments {
+main #blog-details .comments-box .user-comments {
   margin-top: 15px;
 }
 
-#blog-details .comments-box .user-comments .inner-comment {
+main #blog-details .comments-box .user-comments .inner-comment {
   margin-bottom: 35px;
   margin-left: 100px;
 }
 
-#blog-details .comments-box .user-comments .comment-box {
+main #blog-details .comments-box .user-comments .comment-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 35px;
 }
 
-#blog-details .comments-box .user-comments .comment-box .img-box {
+main #blog-details .comments-box .user-comments .comment-box .img-box {
   margin-right: 20px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
 
-#blog-details .comments-box .user-comments .comment-box .img-box img {
+main #blog-details .comments-box .user-comments .comment-box .img-box img {
   width: 100px;
   height: 100px;
 }
 
-#blog-details .comments-box .user-comments .comment-box .text-content {
+main #blog-details .comments-box .user-comments .comment-box .text-content {
   display: inline-block;
 }
 
-#blog-details .comments-box .user-comments .comment-box .text-content .comment-info {
+main #blog-details .comments-box .user-comments .comment-box .text-content .comment-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2232,20 +2232,20 @@ header .sidebar .menu-box .side-menu .nav-item a {
   margin-bottom: 15px;
 }
 
-#blog-details .comments-box .user-comments .comment-box .text-content .comment-info .comment-author h3 {
+main #blog-details .comments-box .user-comments .comment-box .text-content .comment-info .comment-author h3 {
   font-size: 20px;
   padding-bottom: 5px;
 }
 
-#blog-details .comments-box .user-comments .comment-box .text-content .comment-info .comment-author span {
+main #blog-details .comments-box .user-comments .comment-box .text-content .comment-info .comment-author span {
   font-size: 14px;
 }
 
-#blog-details .comments-box p {
+main #blog-details .comments-box p {
   margin-bottom: 0px;
 }
 
-#blog-details .comments-box .reply-btn {
+main #blog-details .comments-box .reply-btn {
   color: #fff;
   height: 42px;
   width: 100px;
@@ -2257,7 +2257,7 @@ header .sidebar .menu-box .side-menu .nav-item a {
   text-align: center;
 }
 
-#blog-details .sbm-btn {
+main #blog-details .sbm-btn {
   color: #fff;
   width: 170px;
   height: 50px;
@@ -2267,17 +2267,17 @@ header .sidebar .menu-box .side-menu .nav-item a {
   background-color: #0000fe;
 }
 
-#blog-details .form-area {
+main #blog-details .form-area {
   padding: 35px;
   margin-top: 40px;
   background-color: #fff;
 }
 
-#blog-details .form-area .input-field {
+main #blog-details .form-area .input-field {
   padding: 0px 7px;
 }
 
-#blog-details .form-area .input-field input {
+main #blog-details .form-area .input-field input {
   width: 254px;
   height: 45px;
   border: none;
@@ -2287,7 +2287,7 @@ header .sidebar .menu-box .side-menu .nav-item a {
   background-color: #efeff0;
 }
 
-#blog-details .form-area textarea {
+main #blog-details .form-area textarea {
   width: 100%;
   border: none;
   height: 165px;
@@ -2297,13 +2297,13 @@ header .sidebar .menu-box .side-menu .nav-item a {
   background-color: #efeff0;
 }
 
-#blog-details .blog-widgets > div {
+main #blog-details .blog-widgets > div {
   overflow: hidden;
   border-radius: 4px;
   margin-bottom: 40px;
 }
 
-#blog-details .blog-widgets h3 {
+main #blog-details .blog-widgets h3 {
   color: #000000;
   font-size: 20px;
   font-weight: 700;
@@ -2311,16 +2311,16 @@ header .sidebar .menu-box .side-menu .nav-item a {
   font-family: "Roboto";
 }
 
-#blog-details .blog-widgets .p-bg {
+main #blog-details .blog-widgets .p-bg {
   padding: 35px 30px;
   background-color: #fff;
 }
 
-#blog-details .blog-widgets .search-widget {
+main #blog-details .blog-widgets .search-widget {
   position: relative;
 }
 
-#blog-details .blog-widgets .search-widget input {
+main #blog-details .blog-widgets .search-widget input {
   width: 100%;
   height: 48px;
   border: none;
@@ -2329,7 +2329,7 @@ header .sidebar .menu-box .side-menu .nav-item a {
   background-color: #fff;
 }
 
-#blog-details .blog-widgets .search-widget button {
+main #blog-details .blog-widgets .search-widget button {
   top: 0;
   right: 0;
   width: 48px;
@@ -2341,15 +2341,15 @@ header .sidebar .menu-box .side-menu .nav-item a {
   background-color: #ff5520;
 }
 
-#blog-details .blog-widgets .search-widget button i {
+main #blog-details .blog-widgets .search-widget button i {
   color: #fff;
 }
 
-#blog-details .blog-widgets .blog-category-widget ul li {
+main #blog-details .blog-widgets .blog-category-widget ul li {
   margin-bottom: 5px;
 }
 
-#blog-details .blog-widgets .blog-category-widget ul li a {
+main #blog-details .blog-widgets .blog-category-widget ul li a {
   color: #000;
   font-weight: 700;
   padding-left: 15px;
@@ -2359,7 +2359,7 @@ header .sidebar .menu-box .side-menu .nav-item a {
   transition: 0.4s all ease-in-out;
 }
 
-#blog-details .blog-widgets .blog-category-widget ul li a::before {
+main #blog-details .blog-widgets .blog-category-widget ul li a::before {
   left: 0;
   top: -1px;
   color: #ff5520;
@@ -2370,11 +2370,11 @@ header .sidebar .menu-box .side-menu .nav-item a {
   font-family: "Font Awesome 5 Free";
 }
 
-#blog-details .blog-widgets .blog-category-widget ul li a:hover {
+main #blog-details .blog-widgets .blog-category-widget ul li a:hover {
   margin-left: 15px;
 }
 
-#blog-details .blog-widgets .recent-posts .post {
+main #blog-details .blog-widgets .recent-posts .post {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2382,30 +2382,30 @@ header .sidebar .menu-box .side-menu .nav-item a {
   border: 1px solid #eef1fe;
 }
 
-#blog-details .blog-widgets .recent-posts .post:not(:last-child) {
+main #blog-details .blog-widgets .recent-posts .post:not(:last-child) {
   margin-bottom: 14px;
   padding-bottom: 14px;
 }
 
-#blog-details .blog-widgets .recent-posts .post:last-child {
+main #blog-details .blog-widgets .recent-posts .post:last-child {
   border-bottom: none;
 }
 
-#blog-details .blog-widgets .recent-posts .post img {
+main #blog-details .blog-widgets .recent-posts .post img {
   width: 65px;
   height: 65px;
   margin-right: 10px;
   border-radius: 4px;
 }
 
-#blog-details .blog-widgets .recent-posts .post h3 {
+main #blog-details .blog-widgets .recent-posts .post h3 {
   color: #000;
   font-size: 16px;
   margin-bottom: 0;
   font-weight: 700;
 }
 
-#blog-details .blog-widgets .popular-tags .tags a {
+main #blog-details .blog-widgets .popular-tags .tags a {
   margin-right: 5px;
   margin-bottom: 5px;
   padding: 10px 12px;
@@ -3937,12 +3937,94 @@ header .sidebar .menu-box .side-menu .nav-item a {
     background-color: #2b2b2f;
     border-radius: 20px;
   }
+  #course-details .tabs-container #tabs li {
+    width: 100%;
+  }
+  #course-details .accordion .accordion-button {
+    font-size: 14px !important;
+    padding: 3px 0px 3px 20px !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #course-details .accordion .accordion-button::after {
+    font-size: 25px !important;
+    top: 15% !important;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 1px !important;
+  }
+  #course-details .accordion .accordion-button .details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #course-details .accordion .accordion-button .details span {
+    margin: 0;
+    margin-left: 5px;
+  }
   #course-details .accordion .accordion-button h3 {
+    font-size: 16px !important;
     text-align: start;
+  }
+  #course-details .tab-area .tab-wrapper #curriculm .accordion .accordion-item .accordion-button h3 {
+    padding-left: 15px;
+  }
+  #course-details #instructor .course-instructor > div {
+    display: unset !important;
+  }
+  #course-details #instructor .course-instructor .ins-info {
+    display: unset !important;
+  }
+  #course-details #instructor .course-instructor .instructor-text {
+    margin: 20px 0;
+  }
+  #course-details #instructor .course-instructor .ins-btn {
+    margin: 20px 0;
+  }
+  #course-details #review form > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #instr-detail .ins-details .img-box {
     width: 100% !important;
     height: auto !important;
+  }
+  #contact form > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact form > div input {
+    width: 100%;
+    margin: 10px 0;
+  }
+  #blog-details .comments-box .img-box img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  #blog-details .comments-box .user-comments .inner-comment {
+    margin-bottom: 35px;
+    margin-left: 30px;
+  }
+  #blog-details .form-area > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #blog-details .form-area > div .input-field {
+    padding: 0;
+  }
+  #blog-details .form-area > div .input-field input {
+    width: 100% !important;
   }
   footer .covered-btn {
     margin: 0;
@@ -4048,6 +4130,9 @@ header .sidebar .menu-box .side-menu .nav-item a {
   body #courses .covered-btn {
     margin-right: 0 !important;
   }
+  body #course-details .tabs-container #tabs li {
+    width: 100%;
+  }
   body #course-details .accordion .accordion-button {
     font-size: 14px !important;
     padding: 3px 0px 3px 20px !important;
@@ -4077,6 +4162,27 @@ header .sidebar .menu-box .side-menu .nav-item a {
   }
   body #course-details .accordion .accordion-button h3 {
     font-size: 16px !important;
+  }
+  body #course-details .tab-area .tab-wrapper #curriculm .accordion .accordion-item .accordion-button h3 {
+    padding-left: 15px;
+  }
+  body #course-details #instructor .course-instructor > div {
+    display: unset !important;
+  }
+  body #course-details #instructor .course-instructor .ins-info {
+    display: unset !important;
+  }
+  body #course-details #instructor .course-instructor .instructor-text {
+    margin: 20px 0;
+  }
+  body #course-details #instructor .course-instructor .ins-btn {
+    margin: 20px 0;
+  }
+  body #course-details #review form > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   body #regstr-banner .content {
     padding: 20px;
